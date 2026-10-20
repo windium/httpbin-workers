@@ -1,0 +1,23 @@
+{
+  "name": "httpbin-workers",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "node scripts/test.mjs",
+    "compat": "node scripts/compat.mjs",
+    "images": "node scripts/build-images.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.5",
+    "wrangler": "^4.40.0"
+  },
+  "description": "An httpbin.org-compatible HTTP request & response service for Cloudflare Workers",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/windium/httpbin-workers.git"
+  }
+}
